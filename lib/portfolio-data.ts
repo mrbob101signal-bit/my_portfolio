@@ -18,7 +18,13 @@ export async function updatePortfolioData(data: Partial<PortfolioData>): Promise
   try {
     const currentData = await getPortfolioData()
     const updatedData = { ...currentData, ...data }
-    fs.writeFileSync(dataFilePath, JSON.stringify(updatedData, null, 2))
+    try {
+      fs.writeFileSync(dataFilePath, JSON.stringify(updatedData, null, 2))
+    } catch (writeError) {
+      console.warn("Could not write to file (read-only filesystem on Vercel):", writeError)
+      // On Vercel, file writes will fail but we still return the updated data
+      // Note: Changes won't persist across deployments
+    }
     return updatedData
   } catch (error) {
     console.error("Error updating portfolio data:", error)

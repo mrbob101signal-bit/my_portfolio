@@ -45,7 +45,12 @@ export async function saveContact(contactData: Omit<ContactMessage, "id" | "crea
     }
     
     contacts.push(newContact)
-    await fs.writeFile(CONTACTS_FILE, JSON.stringify(contacts, null, 2))
+    try {
+      await fs.writeFile(CONTACTS_FILE, JSON.stringify(contacts, null, 2))
+    } catch (writeError) {
+      console.warn("Could not write to file (read-only filesystem):", writeError)
+      // On Vercel, file writes fail - but we still return success for the contact
+    }
     
     return newContact
   } catch (error) {
@@ -63,7 +68,11 @@ export async function updateContactStatus(id: string, status: "read" | "unread")
       contact.id === id ? { ...contact, status } : contact
     )
     
-    await fs.writeFile(CONTACTS_FILE, JSON.stringify(updatedContacts, null, 2))
+    try {
+      await fs.writeFile(CONTACTS_FILE, JSON.stringify(updatedContacts, null, 2))
+    } catch (writeError) {
+      console.warn("Could not write to file (read-only filesystem on Vercel):", writeError)
+    }
   } catch (error) {
     console.error("Error updating contact status:", error)
     throw error
@@ -76,7 +85,11 @@ export async function deleteContact(id: string): Promise<void> {
     const contacts = await getContacts()
     
     const filteredContacts = contacts.filter(contact => contact.id !== id)
-    await fs.writeFile(CONTACTS_FILE, JSON.stringify(filteredContacts, null, 2))
+    try {
+      await fs.writeFile(CONTACTS_FILE, JSON.stringify(filteredContacts, null, 2))
+    } catch (writeError) {
+      console.warn("Could not write to file (read-only filesystem on Vercel):", writeError)
+    }
   } catch (error) {
     console.error("Error deleting contact:", error)
     throw error

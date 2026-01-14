@@ -59,8 +59,9 @@ export async function POST(request: NextRequest) {
     )
   } catch (error) {
     console.error("Error processing contact:", error)
+    console.error("Error details:", JSON.stringify(error, null, 2))
     return NextResponse.json(
-      { error: "Failed to process your message" },
+      { error: "Failed to process your message", details: String(error) },
       { status: 500 }
     )
   }
