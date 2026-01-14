@@ -1,0 +1,195 @@
+{
+  "about": {
+    "name": "OEUN Chhinh",
+    "title": "Web Designer & IT Student",
+    "bio": "a Web Designer & IT Student",
+    "detailedBio": "I am a dedicated 3rd-year IT student at The University of Cambodia, originally from Tbong Khmum Province. My journey in technology began at ETEC Institute, where I studied C, C++, and Web Design, building a strong foundation for my career.",
+    "additionalInfo": "With over a year of experience at DDD company and 3 months as an IT Support Intern at UC, I have developed practical skills in both technical support and professional collaboration. My career objective is to excel in Web Design, PHP, Laravel, and Java development.",
+    "email": "oeunchhinh@gmail.com",
+    "phone": "0884395053",
+    "location": "Tbong Khmum, Cambodia",
+    "image": "/chhinh03.jpg",
+    "highlights": [
+      {
+        "icon": "GraduationCap",
+        "value": "Year 3",
+        "label": "IT Student at UC"
+      },
+      {
+        "icon": "Briefcase",
+        "value": "1+ Year",
+        "label": "Work Experience"
+      },
+      {
+        "icon": "Award",
+        "value": "3 Months",
+        "label": "UC Internship"
+      },
+      {
+        "icon": "Target",
+        "value": "4+",
+        "label": "Technical Skills"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "id": "1",
+      "title": "IT Support Intern",
+      "company": "The University of Cambodia",
+      "location": "Phnom Penh",
+      "duration": "3 Months",
+      "description": [
+        "Provided technical support to staff and students",
+        "Troubleshot hardware and software issues",
+        "Maintained IT infrastructure and equipment",
+        "Assisted in network administration tasks"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Employee",
+      "company": "DDD Company",
+      "location": "Cambodia",
+      "duration": "1+ Year",
+      "description": [
+        "Gained valuable professional experience",
+        "Developed technical skills in a corporate environment",
+        "Collaborated with team members on various projects",
+        "Enhanced problem-solving abilities"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Food Delivery Partner",
+      "company": "Grab Cambodia",
+      "location": "Cambodia",
+      "duration": "Ongoing",
+      "description": [
+        "Developed strong time management skills",
+        "Enhanced customer service abilities",
+        "Improved navigation and route optimization",
+        "Maintained high customer satisfaction ratings"
+      ]
+    },
+    {
+      "id": "1768354355923",
+      "title": "Employee",
+      "company": "Moto dealer",
+      "location": "Kampong Cham",
+      "duration": "3 months",
+      "description": [
+        "I worked there since 2019"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "1",
+      "institution": "The University of Cambodia",
+      "program": "Bachelor of Information Technology",
+      "specialization": "Software Project Management",
+      "period": "2023 - Present",
+      "status": "Current"
+    },
+    {
+      "id": "2",
+      "institution": "ETEC Institute",
+      "program": "Certificate Program",
+      "specialization": "C, C++, Web Design",
+      "period": "Completed",
+      "status": "Completed"
+    }
+  ],
+  "skills": [
+    {
+      "id": "1",
+      "name": "JavaScript",
+      "category": "Frontend",
+      "level": "Advanced"
+    },
+    {
+      "id": "2",
+      "name": "React",
+      "category": "Frontend",
+      "level": "Advanced"
+    },
+    {
+      "id": "3",
+      "name": "TypeScript",
+      "category": "Frontend",
+      "level": "Intermediate"
+    },
+    {
+      "id": "4",
+      "name": "Next.js",
+      "category": "Frontend",
+      "level": "Advanced"
+    },
+    {
+      "id": "5",
+      "name": "PHP",
+      "category": "Backend",
+      "level": "Intermediate"
+    },
+    {
+      "id": "6",
+      "name": "Laravel",
+      "category": "Backend",
+      "level": "Intermediate"
+    },
+    {
+      "id": "7",
+      "name": "Java",
+      "category": "Backend",
+      "level": "Beginner"
+    },
+    {
+      "id": "8",
+      "name": "C++",
+      "category": "Programming",
+      "level": "Intermediate"
+    },
+    {
+      "id": "9",
+      "name": "MySQL",
+      "category": "Database",
+      "level": "Intermediate"
+    },
+    {
+      "id": "10",
+      "name": "Tailwind CSS",
+      "category": "Frontend",
+      "level": "Advanced"
+    },
+    {
+      "id": "1768353833788",
+      "name": "Python",
+      "category": "backend",
+      "level": "Intermediate"
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "Personal Portfolio",
+      "description": "A modern, responsive portfolio website built with Next.js and Tailwind CSS",
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
+      "image": "/placeholder.jpg",
+      "link": "#",
+      "github": "https://github.com/chhinh007"
+    }
+  ],
+  "contact": {
+    "email": "oeunchhinh@gmail.com",
+    "phone": "0884395053",
+    "linkedin": "https://linkedin.com/in/mr-chhinh",
+    "github": "https://github.com/chhinh007",
+    "facebook": "https://facebook.com/pu.chhinh"
+  }
+}
